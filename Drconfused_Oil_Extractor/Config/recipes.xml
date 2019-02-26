@@ -1,0 +1,75 @@
+<Drs_Oil_Extractor>
+	<append xpath="/recipes">
+<!-- OIL EXTRACTOR STUFF -->	
+	
+		<recipe name="Oil Extractor" count="1" craft_area="workbench">
+			<ingredient name="generatorbank" count="1"/>
+			<ingredient name="meleeToolAuger" count="1"/>
+			<ingredient name="resourceMechanicalParts" count="10"/>
+			<ingredient name="resourceForgedIron" count="10"/>
+			<ingredient name="resourceMetalPipe" count="5"/>		
+		<!--
+			<ingredient name="Oil Extractor Bottom" count="1"/>
+			<ingredient name="Oil Extractor Top" count="1"/>
+			<ingredient name="Oil Extractor Piping" count="1"/>
+			<ingredient name="Oil Extractor Drill" count="1"/>
+			<ingredient name="Oil Extractor Tank" count="1"/>
+		-->
+		</recipe>
+		
+		
+	<!-- OIL EXTRACTOR BOTTOM 
+		<recipe name="Oil Extractor Bottom" count="1" craft_area="workbench">
+			<ingredient name="scrapIronFrameRamp" count="1"/>
+			<ingredient name="resourceInsulator" count="2"/>
+			<ingredient name="resourceMechanicalParts" count="5"/>
+			<ingredient name="resourceForgedIron" count="10"/>
+			<ingredient name="resourceMetalPipe" count="5"/>
+		</recipe>
+		-->
+	<!-- OIL EXTRACTOR TOP 
+		<recipe name="Oil Extractor Top" count="1" craft_area="workbench">
+			<ingredient name="generatorbank" count="1"/>
+			<ingredient name="carBattery" count="6"/>
+			<ingredient name="scrapIronFrameHalf" count="1"/>
+			<ingredient name="resourceScrapPolymers" count="5"/>
+			<ingredient name="resourceForgedIron" count="5"/>
+		</recipe>
+		-->	
+	<!-- OIL EXTRACTOR DRILL 		
+		<recipe name="Oil Extractor Drill" count="1" craft_area="workbench">
+			<ingredient name="meleeToolAuger" count="1"/>
+			<ingredient name="resourceRawDiamond" count="1"/>
+			<ingredient name="motionsensor" count="1"/>
+			<ingredient name="resourceMechanicalParts" count="5"/>
+			<ingredient name="resourceForgedSteel" count="5"/>
+		</recipe>
+		-->
+	<!-- OIL EXTRACTOR PIPING 		
+		<recipe name="Oil Extractor Tank" count="1" craft_area="workbench">
+			<ingredient name="resourceMechanicalParts" count="5"/>
+			<ingredient name="resourceMetalPipe" count="5"/>
+			<ingredient name="resourceInsulator" count="2"/>
+			<ingredient name="resourceScrapPolymers" count="20"/>
+			<ingredient name="resourceForgedIron" count="10"/>
+		</recipe>	
+		-->
+	<!-- OIL EXTRACTOR TANK 		
+		<recipe name="Oil Extractor Tank" count="1" craft_area="workbench">
+			<ingredient name="scrapIronSheet" count="10"/>
+			<ingredient name="resourceMetalPipe" count="10"/>
+			<ingredient name="motionsensor" count="1"/>
+			<ingredient name="resourceScrapPolymers" count="20"/>
+			<ingredient name="resourceForgedIron" count="10"/>
+		</recipe>
+		-->
+<!-- JERRY CAN 	
+		<recipe name="emptyJerryCan" count="1" craft_area="workbench">
+			<ingredient name="resourceForgedIron" count="1"/>
+			<ingredient name="resourceScrapPolymers" count="2"/>
+			<ingredient name="bucketEmpty" count="1"/>
+			<ingredient name="resourceMetalPipe" count="1"/>
+		</recipe>
+-->
+	</append>
+</Drs_Oil_Extractor>

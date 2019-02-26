@@ -1,0 +1,10 @@
+<Drs_Oil_Extractor>
+
+<!-- attempt at making a new ammoGasCan that returns an emptyGasCan after refuel events with augers/chainsaw/generator bank/vehicles -->
+
+<append xpath="/items">
+<!--	NOTHING TO SEE HERE MOVE ALONG 
+<item name="emptyJerryCan"/>
+-->
+</append>
+</Drs_Oil_Extractor>

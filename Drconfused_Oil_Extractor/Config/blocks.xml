@@ -1,0 +1,126 @@
+<Drs_Oil_Extractor>
+
+<!--
+1. Choose the block that will be the base oil extractor
+2. how does it get a container attribute that will have the grow attribute for the oil?
+3. Do I want the block to change?
+-->
+<!-- Eventually I will add these in, once I have figured out how I want to balance it all out. Deciding wether this should be an end game item to craft or something to get the miners and crafters going without having to constantly search for gas. 
+
+	<block name="Oil Extractor Bottom">
+		<property name="Material" value="Mmetal"/>
+		<property name="Shape" value="Ext3dModel"/> <property name="Texture" value="293"/>
+		<property name="Mesh" value="models"/>
+		<property name="LightOpacity" value="0"/>
+		<property name="Model" value="Industrial/control_panel_duct" param1="main_mesh"/>
+		<property name="Place" value="TowardsPlacerInverted"/>
+		<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+		<drop event="Destroy" name="resourceScrapIron" count="5" prob="1"/>
+		<property name="FilterTags" value="fbuilding,fdecor,fother"/>
+		<property name="SortOrder1" value="7000"/>
+		<property name="SortOrder2" value="0002"/>
+	</block>
+</insertAfter>	
+	
+<insertAfter xpath="/blocks/block[@name='Oil Extractor Bottom']" >
+	<block name="Oil Extractor Top">
+		<property name="Extends" value="ductControlPanel"/>
+		<property name="Model" value="Industrial/control_panel_duct_corner" param1="main_mesh"/>
+	</block>
+</insertAfter>	
+<insertAfter xpath="/blocks/block[@name='Oil Extractor Top']" >
+	<block name="Oil Extractor Piping">
+		<property name="Extends" value="ductControlPanel"/>
+		<property name="Model" value="Industrial/control_panel_duct_corner" param1="main_mesh"/>
+	</block>		
+</insertAfter>	
+<insertAfter xpath="/blocks/block[@name='Oil Extractor Piping']" >	
+	<block name="Oil Extractor Drill">
+		<property name="Extends" value="ductControlPanel"/>
+		<property name="Model" value="Industrial/control_panel_duct_corner" param1="main_mesh"/>
+	</block>
+</insertAfter>	
+<insertAfter xpath="/blocks/block[@name='Oil Extractor Drill']" >	
+	<block name="Oil Extractor Tank">
+		<property name="Extends" value="ductControlPanel"/>
+		<property name="Model" value="Industrial/control_panel_duct_corner" param1="main_mesh"/>
+	</block>
+</insertAfter>
+<insertAfter xpath="/blocks/block[@name='Oil Extractor Tank']" >	
+-->
+
+
+	<!-- THE EXTRACTOR	-->
+<insertAfter xpath="/blocks/block[@name='cubeTileBroken01']" >
+	<block name="Oil Extractor">
+		<property name="CustomIcon" value="controlPanelBase01" />
+		
+		<property name="Class" value="UpgradeRated" />
+		<property name="Material" value="Mmetal"/>
+		<!-- Really want to use that controlPanel as the block
+		<property name="Shape" value="Ext3dModel"/> -->
+		<property name="Shape" value="Ext3dModel"/> 
+		<property name="Texture" value="293"/>
+		<property name="Mesh" value="models"/>
+		<property name="Path" value="solid"/>
+		<property name="Model" value="Industrial/control_panel_base_01" param1="main_mesh"/>
+		<property name="DisplayType" value="blockMulti" />
+		<property name="MultiBlockDim" value="1,2,1"/>
+		<property name="Place" value="TowardsPlacerInverted"/>
+		<property name="ImposterExchange" value="imposterBlock" param1="2"/>
+		
+	<!--	<property name="Texture" value="346,345,341,345,262,345"/> -->
+		<!--
+		<property name="Mesh" value="models"/>
+		<property name="Path" value="solid"/>
+		<property name="Model" value="Industrial/control_panel_base_01" param1="main_mesh"/>
+		<property name="Place" value="TowardsPlacerInverted"/>
+		<property name="ImposterExchange" value="imposterBlock" param1="2"/>
+		-->
+		<property name="Weight" value="216" />
+		<property name="Collide" value="movement,rockets,sight,melee" />
+		<!-- <property name="UpgradeRated.IsRandom" -->
+		<property name="UpgradeRated.ToBlock" value="OilShaleHere" />
+		<property name="UpgradeRated.Rate" value="3" />			
+			<!-- Can I have a customupgradesound? 
+			<property name="CustomUpgradeSound" value="place_block_wood"/>
+			-->
+	 </block>
+   
+</insertAfter>
+
+<insertAfter xpath="/blocks/block[@name='Oil Extractor']" >
+	<block name="OilShaleHere">
+		<property name="CustomIcon" value="cntGasPump" />
+		
+		<property name="Class" value="Loot" />
+		<property name="Material" value="Mmetal_thin"/>
+		
+		<property name="Shape" value="Ext3dModel"/>
+		<property name="Texture" value="293"/>
+		<property name="Mesh" value="models"/>
+		<property name="Path" value="solid"/>
+		<property name="Model" value="Industrial/gas_pump" param1="main_mesh"/>
+		
+		<property name="DisplayType" value="blockMulti" />
+		<property name="MultiBlockDim" value="1,2,1"/>
+		<property name="ImposterExchange" value="imposterDontBlockCTRPlate" param1="90"/> 
+		<property name="Weight" value="216" />
+		<property name="Collide" value="movement,rockets,sight,melee" />
+		<property name="LootList" value="225" />
+		<drop event="Destroy" count="0"/>
+		<drop event="Harvest" count="0"/>
+		<property name="DowngradeBlock" value="Oil Extractor"/> 
+	</block>
+</insertAfter> 
+ 
+ 
+ </Drs_Oil_Extractor>
+  
+  
+  
+  
+  
+  
+  
+  

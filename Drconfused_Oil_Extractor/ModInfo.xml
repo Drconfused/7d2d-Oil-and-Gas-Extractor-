@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+    <ModInfo>
+        <Name value="Drconfused Oil extractor" />
+        <Description value="Adds in an oil extractor" />
+        <Author value="Drconfused" />
+        <Version value="0.01" />
+    </ModInfo>
+</xml>
