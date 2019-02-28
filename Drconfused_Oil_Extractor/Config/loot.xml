@@ -1,45 +1,51 @@
 <Drs_Oil_Extractor>
+
+
+
 <insertAfter xpath="/lootcontainers/lootcontainer[@id='110']" >
 <!-- Mining Well -->
-	<lootcontainer id="225" count="0,4" size="8,9" sound_open="forge_open" sound_close="forge_close" destroy_on_close="true" loot_quality_template="baseTemplate" >
+	<lootcontainer id="225" count="0,6" size="8,9" sound_open="forge_open" sound_close="forge_close" destroy_on_close="true" loot_quality_template="baseTemplate" >
 	<item name="resourceOilShale" count="1,5" prob="0.5"/>
 	<item name="ammoGasCan" count="5,50" prob="0.5"/>
-	<item name="resourceOil" count="1,5" prob="0.5"/>
+	<item name="resourceOil" count="1,2" prob="0.5"/>
 	<item name="terrOreOilDeposit" count="1,5" prob="0.1"/>
 	<item name="terrOreSandPlusOil" count="1,5" prob="0.1"/>
+	<item name="resourceParaffinWax" count="1,5" prob="0.1"/>
+	<item name="Motor Tool Fuel" count="1,5" prob="0.25"/>
+	<item name="terrAsphalt" count="1,5" prob="0.05"/>
+	<item name="Tar" count="1,5" prob="0.05"/>
+	
 <!--
 		<item name="terrStone" count="8,12" prob="0.07"/>
 		<item name="terrDirt" count="8,12" prob="0.07"/>
-		<item name="terrForestGround" count="8,12" prob="0.07"/>
-		<item name="terrDesertGround" count="8,12" prob="0.05"/>
-		<item name="terrSand" count="8,12" prob="0.05"/>
-		<item name="terrSandStone" count="8,12" prob="0.05"/>
-		<item name="terrGravel" count="8,12" prob="0.05"/>
-		<item name="terrAsphalt" count="8,12" prob="0.05"/>
+		
 		<item name="terrOreIron" count="8,12" prob="0.007"/>
 		<item name="terrOreLead" count="8,12" prob="0.005"/>
 		<item name="terrOreCoal" count="8,12" prob="0.007"/>
 		<item name="terrOrePotassiumNitrate" count="8,12" prob="0.007"/>
 		<item name="terrOreOilDeposit" count="8,12" prob="0.007"/>
+		
 		<item name="terrOreSilver" count="3,12" prob="0.005"/>
 		<item name="terrOreGold" count="3,12" prob="0.001"/>
 		<item name="terrOreDiamond" count="3,12" prob="0.005"/>
+		
 		<item name="terrOreGravelPlusIron" count="8,12" prob="0.005"/>
 		<item name="terrOreGravelPlusLead" count="8,12" prob="0.005"/>
 		<item name="terrOreGravelPlusCoal" count="8,12" prob="0.007"/>
 		<item name="terrOreGravelPlusPotassium" count="8,12" prob="0.005"/>
+		
 		<item name="terrOreSandPlusIron" count="8,12" prob="0.007"/>
 		<item name="terrOreSandPlusLead" count="8,12" prob="0.007"/>
-		<item name="terrOreSandPlusOil" count="8,12" prob="0.007"/>
 		<item name="terrOreSandPlusCoal" count="8,12" prob="0.005"/>
 		<item name="terrOreSandPlusPotassium" count="8,12" prob="0.005"/>
-		<item name="terrFertileFarmland" count="8,12" prob="0.05"/>
-		<item name="terrFertileDirt" count="8,12" prob="0.05"/>
-		<item name="terrFertileGrass" count="8,12"  prob="0.05"/>
+		
+
 		<item name="resourceSilverNugget" count="1,6" prob="0.007"/>
 		<item name="resourceGoldNugget" count="1,6" prob="0.005"/>
 		<item name="resourceRawDiamond" count="1,6" prob="0.007"/>
+		
 		<item name="resourceIronFragment" count="2,10" prob="0.007"/>
+		
 		<item name="terrOreOilDeposit" count="3,8" prob="0.007"/>
 		<item name="terrOreSilver" count="1,3" prob="0.003"/>
 		<item name="terrOreGold" count="1,3" prob="0.009"/>

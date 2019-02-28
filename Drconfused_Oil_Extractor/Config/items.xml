@@ -3,8 +3,69 @@
 <!-- attempt at making a new ammoGasCan that returns an emptyGasCan after refuel events with augers/chainsaw/generator bank/vehicles -->
 
 <append xpath="/items">
-<!--	NOTHING TO SEE HERE MOVE ALONG 
-<item name="emptyJerryCan"/>
--->
+	<item name="resourceParaffinWax">
+		<property name="HoldType" value="45"/>
+		<property name="CustomIcon" value="Drs_paraffinWax"/>
+		<property name="Meshfile" value="Items/Misc/sackPrefab"/>
+		<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
+		<property name="Material" value="MresourceOilShale"/>
+		<property name="Stacknumber" value="6000"/> <!-- STK resource -->
+		<property name="FuelValue" value="1"/>
+		<property name="EconomicValue" value="5"/>
+		<property name="EconomicBundleSize" value="50"/>
+		<property name="Group" value="Resources"/>
+		<property name="CraftingIngredientExp" value="2"/>
+	</item>
+	<item name="Paraffin Candle">
+		<property name="Class" value="ItemClassTorch"/>
+		<property name="CustomIcon" value="candle"/>
+		<property name="HoldType" value="12"/>
+		<property name="Meshfile" value="Items/Tools/candlePrefab"/>
+		<property name="Material" value="Morganic"/>
+		<property name="Stacknumber" value="50"/> 
+		<property name="FuelValue" value="16"/>
+		<property name="EconomicValue" value="24"/>
+		<property class="Action1">
+			<property name="Class" value="PlaceAsBlock"/>
+			<property name="Delay" value="0.5"/>
+			<property name="Blockname" value="candleWallLightPlayer"/>
+		</property>
+		<property name="Group" value="Basics,Decor/Miscellaneous"/>
+	</item>
+    <item name="Tar">
+        <property name="CustomIcon" value="Drs_Tar"/> 
+      	<property name="HoldType" value="45"/>
+      	<property name="Meshfile" value="Items/Misc/sackPrefab"/>
+      	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
+      	<property name="Material" value="Morganic"/>
+      	<property name="Weight" value="10"/>
+      	<property name="Stacknumber" value="1000"/> 
+		<property name="FuelValue" value="10"/>
+      	<property name="EconomicValue" value="20"/>
+      	<property name="Group" value="Resources,Chemicals"/>
+      </item>
 </append>
+
+<!-- Motor Tool Fuel -->
+<append xpath="/items">
+	<item name="Motor Tool Fuel">
+		<property name="Tags" value="gasoline"/>
+		<property name="CustomIcon" value="Drs_MotorToolFuel"/>
+		<property name="HoldType" value="45"/>
+		<property name="Meshfile" value="Items/Misc/sackPrefab"/>
+		<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
+		<property name="Material" value="MFuelBarrel"/>
+		<property name="Stacknumber" value="1000"/>
+		<property name="FuelValue" value="2"/>
+		<property name="EconomicValue" value="70"/> 
+		<property name="EconomicBundleSize" value="100"/>
+		<property name="CraftingSkillGroup" value="craftSkillScience"/>
+		<property name="Group" value="Resources,Chemicals"/>
+	</item>	
+</append>
+	<!-- adding fuel to the motor tools -->
+		<append xpath="/items/item[@name='meleeToolChainsaw']/property[@class='Action0']/property[@name='Magazine_items']/@value">,Motor Tool Fuel</append>	
+		<append xpath="/items/item[@name='meleeToolAuger']/property[@class='Action0']/property[@name='Magazine_items']/@value">,Motor Tool Fuel</append>
+
+
 </Drs_Oil_Extractor>

@@ -72,4 +72,37 @@
 		</recipe>
 -->
 	</append>
+	
+<!-- CANDLE -->
+	<append xpath="/recipes">	
+		<recipe name="Paraffin Candle" count="1">
+			<ingredient name="resourceYuccaFibers" count="1"/>
+			<ingredient name="resourceParaffinWax" count="1"/>
+		</recipe>
+	</append>	
+	
+<!-- Motor Tool Fuel	-->
+	<append xpath="/recipes">
+		<recipe name="Motor Tool Fuel" count="100">
+			<ingredient name="ammoGasCan" count="80"/>
+			<ingredient name="resourceOil" count="2"/>
+		</recipe>
+	</append>
+
+<!-- TAR stuff -->
+<append xpath="/recipes">
+    <recipe name="Tar" count="2" craft_area="chemistryStation">
+    	<ingredient name="terrAsphalt" count="1"/>
+    </recipe>
+    <recipe name="resourceDuctTape" count="1">
+    	<ingredient name="Tar" count="1"/>
+    	<ingredient name="resourceCloth" count="1"/>
+    </recipe>	
+    <recipe name="meleeToolTorch" count="1">
+    	<ingredient name="Tar" count="1"/>
+    	<ingredient name="resourceCloth" count="2"/>
+    	<ingredient name="resourceWood" count="1"/>
+    </recipe>
+</append>
+
 </Drs_Oil_Extractor>
