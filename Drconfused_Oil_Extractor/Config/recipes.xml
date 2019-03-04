@@ -81,13 +81,14 @@
 		</recipe>
 	</append>	
 	
-<!-- Motor Tool Fuel	-->
+<!-- MotorToolFuel	
 	<append xpath="/recipes">
-		<recipe name="Motor Tool Fuel" count="100">
+		<recipe name="MotorToolFuel" count="100">
 			<ingredient name="ammoGasCan" count="80"/>
 			<ingredient name="resourceOil" count="2"/>
 		</recipe>
 	</append>
+-->
 
 <!-- TAR stuff -->
 <append xpath="/recipes">

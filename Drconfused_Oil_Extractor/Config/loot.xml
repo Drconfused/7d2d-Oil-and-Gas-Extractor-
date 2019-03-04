@@ -4,18 +4,47 @@
 
 <insertAfter xpath="/lootcontainers/lootcontainer[@id='110']" >
 <!-- Mining Well -->
-	<lootcontainer id="225" count="0,6" size="8,9" sound_open="forge_open" sound_close="forge_close" destroy_on_close="true" loot_quality_template="baseTemplate" >
-	<item name="resourceOilShale" count="1,5" prob="0.5"/>
-	<item name="ammoGasCan" count="5,50" prob="0.5"/>
-	<item name="resourceOil" count="1,2" prob="0.5"/>
-	<item name="terrOreOilDeposit" count="1,5" prob="0.1"/>
-	<item name="terrOreSandPlusOil" count="1,5" prob="0.1"/>
-	<item name="resourceParaffinWax" count="1,5" prob="0.1"/>
-	<item name="Motor Tool Fuel" count="1,5" prob="0.25"/>
-	<item name="terrAsphalt" count="1,5" prob="0.05"/>
-	<item name="Tar" count="1,5" prob="0.05"/>
-	
-<!--
+	<lootcontainer id="225" count="1,50" size="8,9" sound_open="forge_open" sound_close="forge_close" destroy_on_close="true" loot_quality_template="baseTemplate" >
+		<item name="resourceOilShale" count="10,50" prob="0.5"/>
+		<item name="ammoGasCan" count="10,75" prob="0.75"/>
+		<item name="resourceOil" count="1,3" prob="0.5"/>
+		<item name="terrOreOilDeposit" count="0,25" prob="0.25"/>
+		<item name="terrOreSandPlusOil" count="0,25" prob="0.25"/>
+		<item name="resourceParaffinWax" count="0,2" prob="0.25"/>
+		<item name="terrAsphalt" count="0,25" prob="0.25"/>
+		<item name="Tar" count="0,2" prob="0.25"/>
+	<!--	
+		<item name="MotorToolFuel" count="5,25" prob="0.25"/>
+	-->
+	<!-- low to medium Values
+		<lootcontainer id="225" count="0,10" size="8,9" sound_open="forge_open" sound_close="forge_close" destroy_on_close="true" loot_quality_template="baseTemplate" >
+		<item name="resourceOilShale" count="10,50" prob="0.5"/>
+		<item name="ammoGasCan" count="10,100" prob="0.75"/>
+		<item name="resourceOil" count="3,6" prob="0.5"/>
+		<item name="terrOreOilDeposit" count="5,25" prob="0.25"/>
+		<item name="terrOreSandPlusOil" count="5,25" prob="0.25"/>
+		<item name="resourceParaffinWax" count="3,6" prob="0.25"/>
+		<item name="terrAsphalt" count="5,25" prob="0.25"/>
+		<item name="Tar" count="5,25" prob="0.25"/>
+	-->
+	<!--
+		<item name="MotorToolFuel" count="5,25" prob="0.25"/>
+	-->	
+	<!-- Lower Values	
+		<item name="resourceOilShale" count="1,5" prob="0.5"/>
+		<item name="ammoGasCan" count="5,50" prob="0.5"/>
+		<item name="resourceOil" count="1,2" prob="0.5"/>
+		<item name="terrOreOilDeposit" count="1,5" prob="0.1"/>
+		<item name="terrOreSandPlusOil" count="1,5" prob="0.1"/>
+		<item name="resourceParaffinWax" count="1,5" prob="0.1"/>
+		
+		<item name="terrAsphalt" count="1,5" prob="0.05"/>
+		<item name="Tar" count="1,5" prob="0.05"/>
+	-->
+	<!--
+		<item name="MotorToolFuel" count="1,5" prob="0.25"/>
+	-->
+	<!--
 		<item name="terrStone" count="8,12" prob="0.07"/>
 		<item name="terrDirt" count="8,12" prob="0.07"/>
 		
@@ -50,7 +79,7 @@
 		<item name="terrOreSilver" count="1,3" prob="0.003"/>
 		<item name="terrOreGold" count="1,3" prob="0.009"/>
 		<item name="terrOreDiamond" count="1,3" prob="0.005"/>
--->
+	-->
 </lootcontainer>
 </insertAfter>
 </Drs_Oil_Extractor>

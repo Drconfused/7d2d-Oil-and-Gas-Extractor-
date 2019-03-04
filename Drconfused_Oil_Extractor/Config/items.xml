@@ -46,26 +46,38 @@
       </item>
 </append>
 
-<!-- Motor Tool Fuel -->
-<append xpath="/items">
-	<item name="Motor Tool Fuel">
-		<property name="Tags" value="gasoline"/>
-		<property name="CustomIcon" value="Drs_MotorToolFuel"/>
-		<property name="HoldType" value="45"/>
-		<property name="Meshfile" value="Items/Misc/sackPrefab"/>
-		<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
-		<property name="Material" value="MFuelBarrel"/>
-		<property name="Stacknumber" value="1000"/>
-		<property name="FuelValue" value="2"/>
-		<property name="EconomicValue" value="70"/> 
-		<property name="EconomicBundleSize" value="100"/>
-		<property name="CraftingSkillGroup" value="craftSkillScience"/>
-		<property name="Group" value="Resources,Chemicals"/>
-	</item>	
-</append>
-	<!-- adding fuel to the motor tools -->
-		<append xpath="/items/item[@name='meleeToolChainsaw']/property[@class='Action0']/property[@name='Magazine_items']/@value">,Motor Tool Fuel</append>	
-		<append xpath="/items/item[@name='meleeToolAuger']/property[@class='Action0']/property[@name='Magazine_items']/@value">,Motor Tool Fuel</append>
+<!-- adding fuel to the motor tools -->
 
+<!-- This is not #$%^ working! 
+
+		<append xpath="/items/item[@name='meleeToolChainsaw']/property[@class='Action0']/property[@name='Magazine_items' and @value='ammoGasCan']/@value">,MotorToolFuel</append>	
+		
+		<append xpath="/items/item[@name='meleeToolAuger']/property[@class='Action0']/property[@name='Magazine_items' and @value='ammoGasCan']/@value">,MotorToolFuel</append> 
+-->		
+<!--
+		<set xpath="/items/item/property[@class='Action0']/property[@name='Magazine_items' and @value='ammoGasCan']/@value">MotorToolFuel</set>	-->
+
+<!-- MotorToolFuel 
+	<append xpath="/items">
+		<item name="MotorToolFuel">
+			<property name="Tags" value="gasoline"/>
+			<property name="CustomIcon" value="Drs_MotorToolFuel"/>
+			<property name="HoldType" value="45"/>
+			<property name="Meshfile" value="Items/Misc/sackPrefab"/>
+			<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
+			<property name="Material" value="MFuelBarrel"/>
+			<property name="Stacknumber" value="1000"/>
+			<property name="FuelValue" value="2"/>
+			<property name="EconomicValue" value="70"/> 
+			<property name="EconomicBundleSize" value="100"/>
+			<property name="CraftingSkillGroup" value="craftSkillScience"/>
+			<property name="Group" value="Resources,Chemicals"/>
+		</item>	
+	</append>
+-->
+
+
+	
+<!-- <set xpath="/items/item[@name='meleeToolAuger']/property[@class='Action0']/property[@name='Magazine_items' and @value='ammoGasCan']/@value">ammoGasCan,MotorToolFuel</set> -->
 
 </Drs_Oil_Extractor>
